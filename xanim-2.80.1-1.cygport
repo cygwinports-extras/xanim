@@ -1,0 +1,25 @@
+DESCRIPTION=
+HOMEPAGE="http://xanim.polter.net/"
+SRC_URI="http://xanim.polter.net/files/${PN}${PV//./}.tar.gz"
+SRC_DIR="${PN}${PV//./}"
+
+src_compile() {
+	lndirs
+	cd ${B}
+
+	# neither OSS nor NAS audio seemingly work on Cygwin :-(
+	cygmake \
+		CC=gcc \
+		INCLUDE='-I/usr/include/X11' \
+		XA_AUDIO_DEFS= \
+		XA_DLL_PATH='/usr/lib/xanim/mods' \
+		XLIBDIR=
+}
+
+src_install() {
+	cd ${B}
+	dobin xanim.exe
+
+	dodoc docs/*.doc docs/*.readme
+	newman docs/xanim.man xanim.1
+}

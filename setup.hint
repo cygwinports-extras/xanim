@@ -1,0 +1,5 @@
+category: Video
+requires: cygwin libX11_6 libXext6 libXt6 zlib
+sdesc: "X animation viewer"
+ldesc: "Xanim is a (extremely old) program for playing a wide variety of
+animation, audio and video formats on unix X11 machines."

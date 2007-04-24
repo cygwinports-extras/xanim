@@ -1,0 +1,83 @@
+xanim
+------------------------------------------
+Xanim is a (extremely old) program for playing a wide variety of
+animation, audio and video formats on unix X11 machines.
+
+NOTE: Audio does not work on Cygwin.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  libX11_6-1.1.1-1
+  libXext6-1.0.2-1
+  libXt6-1.0.4-1
+  zlib-1.2.3-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  binutils-20060817-1
+  cygport-0.2.11-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://xanim.polter.net/
+
+Canonical download:
+  http://xanim.polter.net/files/xanim2801.tar.gz
+
+LICENSING: 
+  Only 'non-commercial' usage is allowed.  As this is not compatible with
+  the Cygwin DLL, binary packages of xanim should not be distributed.
+
+-------------------------------------------
+
+Build instructions:
+  unpack xanim-2.80.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./xanim-2.80.1-X.cygport all
+
+This will create:
+  /usr/src/xanim-2.80.1-X-src.tar.bz2
+  /usr/src/xanim-2.80.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/xanim.exe
+  /usr/share/doc/Cygwin/xanim-2.80.1.README
+  /usr/share/doc/xanim-2.80.1/Audio_Checklist.doc
+  /usr/share/doc/xanim-2.80.1/Codecs.doc
+  /usr/share/doc/xanim-2.80.1/Compile_Errs.doc
+  /usr/share/doc/xanim-2.80.1/Compile_Help.doc
+  /usr/share/doc/xanim-2.80.1/Examples.doc
+  /usr/share/doc/xanim-2.80.1/Formats.doc
+  /usr/share/doc/xanim-2.80.1/Problems.doc
+  /usr/share/doc/xanim-2.80.1/README
+  /usr/share/doc/xanim-2.80.1/Remote_Window.doc
+  /usr/share/doc/xanim-2.80.1/Rev_History.doc
+  /usr/share/doc/xanim-2.80.1/VMS_Help.doc
+  /usr/share/doc/xanim-2.80.1/WWW_Helper.doc
+  /usr/share/doc/xanim-2.80.1/audio.readme
+  /usr/share/doc/xanim-2.80.1/cinepak.readme
+  /usr/share/doc/xanim-2.80.1/creative.readme
+  /usr/share/doc/xanim-2.80.1/ijg.readme
+  /usr/share/doc/xanim-2.80.1/indeo.readme
+  /usr/share/doc/xanim-2.80.1/xanim.readme
+  /usr/share/man/man1/xanim.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 2.80.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
